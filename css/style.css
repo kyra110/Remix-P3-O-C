@@ -1,0 +1,154 @@
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  max-width: 1440px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/*header*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0 15px;
+}
+nav a {
+  text-decoration: none;
+  color: inherit;
+  border-top: 2px solid transparent;
+}
+nav a:hover {
+  color: blue;
+  border-top: 2px solid blue;
+}
+nav {
+  display: flex;
+  height: 30px;
+  width: 15%;
+  justify-content: space-between;
+}
+/*formulaire*/
+form {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  height: 40px;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+form span {
+  display: block;
+  height: 100%;
+  width: 13%;
+  background-color: gray;
+  border-radius: 10px 0px 0px 10px;
+}
+form input {
+  border: none;
+  width: 60%;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 10px 10px 0px;
+  border: none;
+  width: 27%;
+  color: white;
+  background-color: blue;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+.loupe {
+  display: none;
+}
+
+/*Conteneur des sections robots et villages*/
+.robotsVillages {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+/*section robots*/
+.robots {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.conatainer-robot {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.card-robot {
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  width: 30%;
+  background-color: white;
+  border: 5px solid transparent;
+  border-radius: 25px;
+}
+.card-robot img {
+  height: 70%;
+  border-radius: 25px 25px 0px 0px;
+}
+.card-robot h3 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+/*Section des Villages*/
+.villages {
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 38%;
+  border-radius: 25px;
+  align-items: center;
+  padding-bottom: 30px;
+}
+.card {
+  height: 150px;
+  width: 350px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 5px solid transparent;
+  border-radius: 25px;
+}
+.card img {
+  height: 100%;
+  width: 38%;
+  object-fit: cover;
+  border-radius: 25px 0px 0px 25px;
+}
+/*Section des robots*/
+.robots {
+  background-color: aqua;
+  width: 58%;
+  border-radius: 25px;
+}
+/*Responsive Tablette*/
+@media screen and (max-width: 1024px) {
+  .rechercher {
+    display: none;
+  }
+  .loupe {
+    display: flex;
+  }
+  .button {
+    width: 20%;
+  }
+  .robotsVillages {
+    display: flex;
+    flex-direction: column;
+  }
+  .robots {
+    width: 100%;
+  }
+  .villages {
+    width: 100%;
+  }
+}
